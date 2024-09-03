@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  zoom: 145%;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+header h1 {
+    font-size: 18px;
+    max-width: 300px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    color: #00ff00;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.appointment-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row input, .form-row select {
+    flex: 1;
+}
+
+.upload-btn {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.date-time select {
+    flex: 1;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.proceed-btn {
+    background-color: rgba(2, 164, 38, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.cancel-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.denr-image {
+    flex: 1;
+}
+
+.denr-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    .search-bar {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+}
+
+.v340_8485 {
+  width: 55px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 47px;
+  left: 515px;
+  font-family: 'Anybody', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  opacity: 1;
+  text-align: left;
+}
+
+.v340_8535 {
+  width: 128px;
+  color: rgba(2, 164, 38, 1);
+  position: absolute;
+  top: 47px;
+  left: 728px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Anybody', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  opacity: 1;
+  text-align: left;
+}

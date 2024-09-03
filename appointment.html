@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Anybody&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Arsenal&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENR CENRO GUINOBATAN DOCUMENTS TRACKING SYSTEM (CGDTS)</title>
+    <link href="./css/customer-home.css" rel="stylesheet"/>
+    <link href="./css/appointment.css" rel="stylesheet">
+    <style>
+        /* Styles for the popup */
+        #imagePopup {
+            zoom: 75%;
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            z-index: 1000;
+            text-align: center;
+            max-width: 75vw;
+            max-height: 75vh;
+            overflow: auto;
+        }
+        #imagePopup img {
+            max-width: 75%;
+            max-height: 75%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        #imagePopup button {
+            margin: 10px;
+            padding: 10px 20px;
+        }
+        .upload-btn {
+            display: inline-flex;
+            flex-direction: column; /* Stack text and subtitle vertically */
+            align-items: center;
+            justify-content: center;
+            width: 250px; /* Fixed width */
+            white-space: normal; /* Allow text to wrap */
+            text-align: center;
+            overflow: hidden; /* Hide overflowing text */
+            position: relative;
+            padding: 10px;
+        }
+        .upload-btn span {
+            display: block;
+            font-size: 0.8em;
+            color: #555;
+            margin-top: 5px;
+            white-space: nowrap; /* Prevent subtitle from wrapping */
+            overflow: hidden;
+            text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+        }
+    </style>
+</head>
+<body>
+    <div class="v340_844">
+        <div class="v340_845">
+            <span class="v340_846">
+                Philippine Standard Time: Friday, April 26, 2024, 8:05:31 PM
+            </span>
+            <span class="v340_847">
+                DENR CENRO GUINOBATAN DOCUMENTS TRACKING SYSTEM (CGDTS)
+            </span>
+            <span class="v340_8485">Home</span>
+            <div class="v340_849">
+                <div class="v340_850"></div>
+                <div class="v340_851"></div>
+                <span class="v340_852">Track Document</span>
+            </div>
+            <span class="v340_8535">Appointment</span>
+            <span class="v340_854">Contact Us</span>
+            <a href="cutting-permit.html">
+                <span class="v340_855">Documents</span>
+            </a>
+            <div class="v340_856">
+                <div class="v340_857"></div>
+                <div class="v340_858"></div>
+            </div>
+            <div class="v340_859"></div>
+        </div>
+    <main>
+        <section class="appointment-form">
+            <h2>Set an Appointment</h2>
+            <form>
+                <div class="form-row">
+                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Middle Initial">
+                </div>
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="Contact Number">
+                <input type="text" placeholder="Identification Number">
+                <select>
+                    <option value="" disabled selected>Purpose of Appointment</option>
+                </select>
+                <div class="form-row">
+                    <select>
+                        <option value="" disabled selected>Select Identification</option>
+                    </select>
+                    <button type="button" id="uploadButton" class="upload-btn">Upload ID Photo<span id="fileName">No file selected</span></button>
+                    <input type="file" id="idPhotoInput" style="display: none;">
+                </div>
+                <div class="form-row date-time">
+                    <input type="date" id="appointmentDate">
+                    <select id="appointmentTime">
+                        <option value="" disabled selected>Time</option>
+                    </select>
+                </div>
+                <div id="formattedDate"></div>
+                <div class="form-actions">
+                    <button type="submit" class="proceed-btn">Proceed</button>
+                    <button type="button" class="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </section>
+        <aside class="denr-image">
+            <img src="images/appointment_images/v340_1009.png" alt="DENR Office">
+        </aside>
+    </main>
+    <div id="imagePopup">
+        <img id="popupImage" src="" alt="Uploaded ID">
+        <button id="uploadNewButton">Upload New</button>
+        <button id="closePopupButton">Close</button>
+    </div>
+    <script src="javascript/appointment.js"></script>
+</body>
+</html>
